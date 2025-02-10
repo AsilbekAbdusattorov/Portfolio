@@ -98,7 +98,7 @@ const Header = ({ language, setLanguage }) => {
             {["about", "projects", "contact"].map((section) => (
               <NavLink
                 key={section}
-                to={`#${section}`}
+                to={`${section}`}
                 className="text-lg font-medium text-white transition-all duration-300 hover:text-yellow-400"
                 onClick={toggleMenu}
               >
