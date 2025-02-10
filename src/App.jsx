@@ -22,7 +22,7 @@ const App = () => {
       <Route element={<MainLayout language={language} setLanguage={setLanguage} />}>
         <Route index element={<Home language={language} />} />
         <Route path="/about" element={<About language={language} />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/contact" element={<Contact language={language} />} />
         <Route path="/projects" element={<Projects language={language} />} />
         <Route path="*" element={<PageNotFound />} />
       </Route>
